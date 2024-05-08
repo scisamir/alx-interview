@@ -4,7 +4,7 @@ Factorial Algorithm
 """
 
 
-def my_factorial(n):
+def _factorial(n):
     """ Returns the Factorial of a number, n """
     fact = 1
 
@@ -30,7 +30,7 @@ def pascal_triangle(n):
         new_list = []
 
         for x in range(y + 1):
-            new_val = my_factorial(y) // (my_factorial(y - x) * my_factorial(x))
+            new_val = _factorial(y) // (_factorial(y - x) * _factorial(x))
             new_list.append(new_val)
 
         my_list.append(new_list)
